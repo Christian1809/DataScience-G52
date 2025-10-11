@@ -6,13 +6,15 @@ POR EJEMPLO SI INGRESO CONVERTIR SOLES A DOLARES E INGRESO 3000 SOLES DEBERIA MO
 
 # ENTRADA
 
+import os
+from time import sleep
+# DATOS DE ENTRADA(INPUT)
 tipo_cambio = 3
 moneda_origen = "SOLES"
 moneda_destino = "DOLARES"
-print("1. convertir de soles a dolares")
-print("2. convertir de dolares a soles")
 
 while(True):
+    os.system("clear")
     print("""
             =============================================
                         CONVERTIDOR DE MONEDAS
@@ -26,15 +28,15 @@ while(True):
     if(opcion == 1):
         moneda_origen = "SOLES"
         moneda_destino = "DOLARES"
-        monto_origen = float(input("Ingrese el monto a convertir: "))
+        monto_origen = float(input("Ingrese el monto en SOLES : "))
         # PROCESO
-        monto_destino = monto_origen / tipo_cambio
+        monto_destino = round(monto_origen / tipo_cambio,2)
     elif(opcion == 2):
         moneda_origen = "DOLARES"
         moneda_destino = "SOLES"
-        monto_origen = float(input("Ingrese el monto a convertir: "))
+        monto_origen = float(input("Ingrese el monto en DOLARES : "))
         # PROCESO
-        monto_destino = monto_origen * tipo_cambio
+        monto_destino = round(monto_origen * tipo_cambio,2)
     elif(opcion == 3):
         print("Gracias por usar el convertidor de monedas")
         exit()
@@ -43,3 +45,4 @@ while(True):
         continue
     # DATOS DE SALIDA(OUTPUT)
     print(f"RESULTADO : {monto_origen} {moneda_origen} son {monto_destino} {moneda_destino}")
+    sleep(2)
