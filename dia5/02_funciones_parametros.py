@@ -17,10 +17,10 @@ def operaciones(a, b):
     resta = a - b
     return sum, resta
 
-saludar()
-print(potencia(3))
-print(potencia(3,4))
-sum, resta = operaciones(5,3)
+saludar()      #Llama a la funcion sin parametro
+print(potencia(3))    #Llama a la funcion con un parametro (exponente por defecto)
+print(potencia(3,4))   #Llama a la funcion con ambos parametros
+sum, resta = operaciones(5,3)     #Llama a la funcion con multiplos parametros
 print(f"Suma: {sum}, resta: {resta}")
 
 
