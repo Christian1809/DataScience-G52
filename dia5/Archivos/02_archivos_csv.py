@@ -13,3 +13,4 @@ with open('alumnos.csv','r') as archivo:
         print('----------------')
         for campo in fila:
             print(campo)
+            
