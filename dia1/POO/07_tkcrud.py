@@ -48,10 +48,10 @@ class TkAlumno:
         
         ### BOTONES ###
         self.btn_insertar = Button(frame,text="Insertar Nuevo Alumno", command=self.insertar_alumno)
-        self.btn_insertar.grid(row=4,column=0,columnspan=2)
+        self.btn_insertar.grid(row=4,column=0,columnspan=2, pady=5, padx=5)
         
         self.btn_eliminar = Button(frame,text='Eliminar Alumno',command=self.eliminar_alumno)
-        self.btn_eliminar.grid(row=5,column=0,columnspan=2)
+        self.btn_eliminar.grid(row=5,column=0,columnspan=2, pady=5, padx=5)
     
     def insertar_alumno(self):
         dni = self.txt_dni.get()
