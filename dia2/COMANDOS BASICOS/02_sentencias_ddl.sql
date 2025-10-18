@@ -1,0 +1,19 @@
+--SENTENCIAS DDL
+--CREAR UNA TABLA
+
+CREATE TABLE alumno(  
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
+    create_time DATETIME COMMENT 'Create Time',
+    nro_documneto    VARCHAR(20) NOT NULL,
+    nombre VARCHAR(255) NOT NULL,
+    email  VARCHAR(100)
+);
+
+
+----MODIFICAR UNA TABLA
+
+ALTER TABLE alumno
+ADD COLUMN nota INT DEFAULT 0;
+
+--ELIMINAR TABLA
+DRP TABLE alumno;
