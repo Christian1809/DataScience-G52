@@ -2,7 +2,7 @@
 #pip install beautifulsoup4
 import requests
 from bs4 import BeautifulSoup
-from tabulate import tabulate
+
 
 URL = "http://books.toscrape.com"
 
