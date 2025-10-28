@@ -1,8 +1,0 @@
-CREATE DATABASE db_g5
-    DEFAULT CHARACTER SET = 'utf8mb4';
-
---ENTRAR A LA BASE DE DATOS
-USER db_g5;
-
---MOSTRAR TABLAS
-show tables;
